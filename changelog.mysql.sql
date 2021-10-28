@@ -2,7 +2,7 @@
 /* https://www.liquibase.org/documentation/sql_format.html */
 
 --changeset Mayank:1
-drop table person2;
+--drop table person2;
 
 --changeset Mayank_1:2
 create table person2 (
@@ -14,7 +14,7 @@ create table person2 (
 )
 
 --changeset Raj:3
-drop table company2
+--drop table company2
 
 --changeset Raj_1:4
 create table company2 (
