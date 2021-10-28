@@ -41,7 +41,7 @@
          if [ -d "$PROJ" ]; then rm -Rf $PROJ; fi
          git clone ${GITURL}/${PROJ}.git
          cd ${PROJ}
-         git checkout $BRANCH
+         git checkout -b $BRANCH
          git status
          '''
      } // steps for checkout stages
