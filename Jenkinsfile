@@ -37,7 +37,7 @@
         // checkout Liquibase project from the git repository
         sh '''
          { set +x; } 2>/dev/null
-         cd /usr/apps/Liquibase-4.4.3-bin/examples/${PROJ}/${ENVIRONMENT_STEP}
+         cd /usr/apps/Liquibase-4.4.3-bin/examples
          if [ -d "$PROJ" ]; then rm -Rf $PROJ; fi
          git clone ${GITURL}/${PROJ}.git
          cd ${PROJ}
