@@ -57,15 +57,15 @@
      echo "------------------------------------"
      echo "----------liquibase status----------"
      echo "------------------------------------"
-     liquibase --contexts=${ENVIRONMENT_STEP} --url=jdbc:mysql://192.168.47.135:3306/db_liquib_test1 --username=${MysqlDB_CREDS_USR} --password=${MysqlDB_CREDS_PSW} --changeLogFile=changelog.mysql.sql --driver=com.mysql.cj.jdbc.Driver status
+     liquibase --contexts=${ENVIRONMENT_STEP} --url=jdbc:mysql://192.168.47.144:3306/db_liquib_test1 --username=${MysqlDB_CREDS_USR} --password=${MysqlDB_CREDS_PSW} --changeLogFile=changelog.mysql.sql --driver=com.mysql.cj.jdbc.Driver status
      echo "---------------------------------------"
      echo "----------liquibase updateSQL----------"
      echo "---------------------------------------"
-     liquibase --contexts=${ENVIRONMENT_STEP} --url=jdbc:mysql://192.168.47.135:3306/db_liquib_test1 --username=${MysqlDB_CREDS_USR} --password=${MysqlDB_CREDS_PSW} --changeLogFile=changelog.mysql.sql --driver=com.mysql.cj.jdbc.Driver updatesql
+     liquibase --contexts=${ENVIRONMENT_STEP} --url=jdbc:mysql://192.168.47.144:3306/db_liquib_test1 --username=${MysqlDB_CREDS_USR} --password=${MysqlDB_CREDS_PSW} --changeLogFile=changelog.mysql.sql --driver=com.mysql.cj.jdbc.Driver updatesql
      echo "------------------------------------"
      echo "----------liquibase update----------"
      echo "------------------------------------"
-     liquibase --contexts=${ENVIRONMENT_STEP} --url=jdbc:mysql://192.168.47.135:3306/db_liquib_test1 --username=${MysqlDB_CREDS_USR} --password=${MysqlDB_CREDS_PSW} --changeLogFile=changelog.mysql.sql --driver=com.mysql.cj.jdbc.Driver update
+     liquibase --contexts=${ENVIRONMENT_STEP} --url=jdbc:mysql://192.168.47.144:3306/db_liquib_test1 --username=${MysqlDB_CREDS_USR} --password=${MysqlDB_CREDS_PSW} --changeLogFile=changelog.mysql.sql --driver=com.mysql.cj.jdbc.Driver update
        '''
      } // steps
    }   // Liquibase commands stage
